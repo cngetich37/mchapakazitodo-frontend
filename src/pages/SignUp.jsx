@@ -1,6 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 function SignUp() {
+  const [user, setUsers] = useState([]);
+  const [email, setEmail] = useState("");
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
   return (
     <>
       <div class="bg-gray-500 h-screen w-screen flex items-center">

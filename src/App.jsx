@@ -1,14 +1,20 @@
-import Home from "./components/Home";
+import Home from "./pages/Home";
+import Account from "./pages/Account"
 import NavBar from "./components/NavBar";
-import SignIn from "./components/SignIn";
-import SignUp from "./components/SignUp";
+import Login from "./pages/Login";
+import SignUp from "./pages/SignUp";
+import { Route,Routes } from "react-router-dom";
 
-// import "./App.css";
 function App() {
   return (
     <>
-      <NavBar/>
-      <SignIn/>
+    <NavBar/>
+      <Routes>
+        <Route exact path="/" element={<Home/>}/>
+        <Route path="/login" element={<Login/>}/>
+        <Route path="/signup" element={<SignUp/>}/>
+        <Route path="/account" element={<Account/>}/>
+      </Routes>
     </>
   );
 }

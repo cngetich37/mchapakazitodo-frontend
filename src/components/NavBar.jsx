@@ -1,12 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function NavBar() {
   return (
-    <>
-      <body>
         <nav class="lg:px-16 px-6 bg-[#0C1D42] shadow-md flex flex-wrap items-center lg:py-0 py-2">
           <div class="flex-1 flex justify-between items-center">
-            <a href="/" class="flex text-lg font-semibold">
+            <Link to="/" class="flex text-lg font-semibold">
               <img
                 src="../src/assets/logo.png"
                 width="50"
@@ -15,7 +14,7 @@ function NavBar() {
                 alt="Collins Nixon Tech Logo"
               />
               <div class='mt-3  text-white text-xl font-sans "Helvetica Neue" italic'>Mchapakazi Todo</div>
-            </a>
+            </Link>
           </div>
           <label for="menu-toggle" class="cursor-pointer lg:hidden block">
             <svg
@@ -37,59 +36,57 @@ function NavBar() {
             <nav>
               <ul class="text-xl text-center items-center gap-x-5 pt-4 md:gap-x-4 lg:text-lg lg:flex  lg:pt-0">
                 {/* <li class="py-2 lg:py-0 ">
-                  <a
+                  <Link
                     class="text-white hover:pb-4 hover:border-b-4 hover:border-purple-400"
                     href="#"
                   >
                     Blog
-                  </a>
+                  </Link>
                 </li>
                 <li class="py-2 lg:py-0 ">
-                  <a
+                  <Link
                     class="text-white hover:pb-4 hover:border-b-4 hover:border-purple-400"
                     href="#"
                   >
                     Projects
-                  </a>
+                  </Link>
                 </li>
                 <li class="py-2 lg:py-0 ">
-                  <a
+                  <Link
                     class="text-white hover:pb-4 hover:border-b-4 hover:border-purple-400"
                     href="#"
                   >
                     Apps
-                  </a>
+                  </Link>
                 </li>
                 <li class="py-2 lg:py-0 ">
-                  <a
+                  <Link
                     class="text-white hover:pb-4 hover:border-b-4 hover:border-purple-400"
                     href="#"
                   >
                     Designs
-                  </a>
+                  </Link>
                 </li> */}
                 <li class="py-2 lg:py-0 ">
-                  <a
+                  <Link
                     class="text-white hover:pb-4 hover:border-b-4 hover:border-white"
-                    href="#"
+                    to="/login"
                   >
-                    Sign in
-                  </a>
+                    Login
+                  </Link>
                 </li>
                 <li class="py-2 lg:py-0 ">
-                  <a
+                  <Link
                     class="text-white hover:pb-4 hover:border-b-4 hover:border-white"
-                    href="#"
+                    to="/signup"
                   >
-                    Sign out
-                  </a>
+                    Sign up
+                  </Link>
                 </li>
               </ul>
             </nav>
           </div>
         </nav>
-      </body>
-    </>
   );
 }
 

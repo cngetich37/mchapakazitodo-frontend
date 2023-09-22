@@ -1,5 +1,5 @@
 import React from "react";
-function SignIn() {
+function Login() {
   return (
     <>
       <div class="bg-gray-500 h-screen w-screen flex items-center">
@@ -79,4 +79,4 @@ function SignIn() {
   );
 }
 
-export default SignIn;
+export default Login;
