@@ -1,45 +1,21 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
-function Home() {
-  const [todo, setTodo] = useState([]);
-  useEffect(() => {
-    getTodo();
-  }, []);
+import React from "react";
 
-  async function getTodo() {
-    try {
-      const response = await axios.get("http://localhost:5001/api/todos");
-      setTodo(response.data);
-    } catch (error) {
-      console.error(error);
-    }
-  }
+function Home() {
   return (
     <>
-      <div className="table">
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Date</th>
-            <th>Day</th>
-            <th>Time</th>
-          </tr>
-        </thead>
-        {todo.map((todo) => {
-          return (
-            <>
-              <tbody>
-                <tr>
-                  <td key={todo} className="is-selected">{todo.name}</td>
-                  <td key={todo}>{todo.day}</td>
-                  <td key={todo}>{todo.date}</td>
-                  <td key={todo}>{todo.time}</td>
-                </tr>
-              </tbody>
-            </>
-          );
-        })}
+    <div className="bg-gray-500">
+    <div className="flex justify-center">
+      <h1 className="text-3xl text-white italic font-semibold">
+        Mchapakazi Todo
+      </h1>
+    </div>
+      <div className="flex justify-center items-center h-auto max-w-xl rounded-lg" >
+        <img src="../src/assets/Checklist-pana.png" />
       </div>
+      <div className="flex justify-center text-xl font-semibold text-white font-sans ">
+        <h1> Designed by Collins Nixon Tech</h1>
+    </div>
+    </div>
     </>
   );
 }
