@@ -1,6 +1,6 @@
 # MchapakaziToDo Frontend
 
-![MchapakaziToDo Logo](https://yourlogo.com/logo.png)
+![MchapakaziToDo Frontend](https://i.postimg.cc/pT8jDKdf/mchapakazi.jpg)
 
 Welcome to MchapakaziToDo Frontend, a sleek and modern task management application built with React, styled using Tailwind CSS, and powered by an Express.js API. This project makes use of the Axios library for seamless REST API calls, ensuring a smooth user experience for managing your tasks.
 
