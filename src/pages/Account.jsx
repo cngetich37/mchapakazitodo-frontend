@@ -30,7 +30,7 @@ function Account() {
                   <i className="fas fa-check-circle"></i>
                 </span>
                 <span className="ml-2 text-sm tracking-wide truncate">
-                  Create Todo
+                  CreateTodo
                 </span>
               </Link>
             </Link>

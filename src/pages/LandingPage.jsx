@@ -9,7 +9,7 @@ function LandingPage() {
         MchapakaziTodo
       </h1>
     </div>
-      <div className="flex justify-center items-center h-auto max-w-xl rounded-lg" >
+      <div className="flex w-screen h-screen justify-center items-center max-w-xl rounded-lg" >
         <img src="../src/assets/Checklist-pana.png" />
       </div>
       <p class="flex justify-center text-sm text-white mt-10">
