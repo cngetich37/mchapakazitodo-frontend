@@ -44,7 +44,7 @@ Follow these steps to get the MchapakaziToDo Frontend up and running on your loc
 
 5. **Open Your Browser**
 
-   Your application will be available at [http://localhost:3000](http://localhost:3000).
+   Your application will be available at [http://localhost:5173](http://localhost:5173).
 
 ## Usage
 
